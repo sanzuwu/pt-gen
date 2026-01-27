@@ -1,7 +1,7 @@
 version: '3.9'
 services:
     ptgen:
-        image: 'pt-gen'
+        image: 'ghcr.io/sanzuwu/pt-gen'
         volumes:
             - './env:/app/pt-gen-universal/.env'
         ports:
