@@ -2,6 +2,7 @@ version: '3.9'
 services:
     ptgen:
         image: 'ghcr.io/sanzuwu/pt-gen'
+        # 将env文件映射到容器
         volumes:
             - './env:/app/pt-gen-universal/.env'
         restart: always
@@ -13,4 +14,5 @@ services:
             - PUID=1000
         tty: true
         stdin_open: true
+        # 网络使用host模式
         network_mode: host
