@@ -1,3 +1,3 @@
 #!/bin/bash
-# 运行node脚本
+# 运行node.js脚本
 cd /app/pt-gen-universal  && npm run start:node
