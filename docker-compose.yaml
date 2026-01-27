@@ -4,8 +4,6 @@ services:
         image: 'ghcr.io/sanzuwu/pt-gen'
         volumes:
             - './env:/app/pt-gen-universal/.env'
-        ports:
-            - '3000:3000'
         restart: always
         hostname: pt-gen
         container_name: pt-gen
