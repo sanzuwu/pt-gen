@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+    ptgen:
+        image: 'pt-gen'
+        volumes:
+            - './env:/app/pt-gen-universal/.env'
+        ports:
+            - '3000:3000'
+        restart: always
+        hostname: pt-gen
+        container_name: pt-gen
+        environment:
+            - TZ=Asia/Shanghai
+            - PGID=1000
+            - PUID=1000
+        tty: true
+        stdin_open: true
+        network_mode: host
