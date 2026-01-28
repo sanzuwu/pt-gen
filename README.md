@@ -8,6 +8,8 @@
 
 映射到容器/app/pt-gen-universal/.env文件
 
+可以直接使用docker-compose文件创建容器
+
 使用网页获取地址：http://yourip:3000
 
 使用差速器的配置地址是：http://yourip:3000/api/info
