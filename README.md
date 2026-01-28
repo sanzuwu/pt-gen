@@ -1,3 +1,5 @@
+脚本使用：https://github.com/YunFeng86/pt-gen-universal
+
 由于最近的pt-gen都不好用了，就想自己建一个pt-gen自用
 
 生成的docker镜像工作目录是/app
