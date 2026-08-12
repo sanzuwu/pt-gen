@@ -1,4 +1,4 @@
-FROM node:bookworm-slim
+FROM node:trixie-slim
 # 创建工作目录 /app
 RUN mkdir -p /app
 WORKDIR /app
@@ -14,8 +14,14 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     chmod +x run.sh && \
     git clone https://github.com/YunFeng86/pt-gen-universal.git && \
 	cd pt-gen-universal && \
-    npm install && \
-	cp .env.example .env && \
+	# 设置 npm 镜像（可选）
+    # npm config set registry https://registry.npmmirror.com && \
+    # 安装pnpm
+    npm install -g pnpm && \
+	# 设置 pnpm 镜像（可选）
+	# pnpm config set registry https://registry.npmmirror.com &&  \
+    pnpm install --frozen-lockfile && \
+  	cp .env.example .env && \
 	apt purge -y git && \
 	apt-get autoremove -y
 EXPOSE 3000	
