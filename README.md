@@ -6,6 +6,9 @@
 
 配置好env文件中的豆瓣cookie和TMDB API
 
+添加豆瓣海报加速环境变量IMAGE_CDN_PREFIX
+默认是https://dbimgs.audiences.me/?
+
 映射到容器/app/pt-gen-universal/.env文件
 
 可以直接使用docker-compose文件创建容器
