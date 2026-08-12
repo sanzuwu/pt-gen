@@ -1,12 +1,12 @@
-脚本使用：https://github.com/YunFeng86/pt-gen-universal
+原脚本：https://github.com/ZeyrMe/pt-gen-universal
+
+我添加豆瓣海报加速环境变量IMAGE_CDN_PREFIX
 
 由于最近的pt-gen都不好用了，就想自己建一个pt-gen自用
 
 生成的docker镜像工作目录是/app
 
 配置好env文件中的豆瓣cookie和TMDB API
-
-添加豆瓣海报加速环境变量IMAGE_CDN_PREFIX
 
 映射到容器/app/pt-gen-universal/.env文件
 
